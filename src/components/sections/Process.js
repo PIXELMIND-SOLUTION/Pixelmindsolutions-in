@@ -56,7 +56,7 @@ const Process = () => {
       id="process"
       className="py-24 bg-white dark:bg-gray-900 overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
         <motion.div

@@ -9,6 +9,9 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ServicesPage from './pages/Services';
+import SingleServicePage from './pages/SingleService';
+import SinglePortfolioPage from './pages/SinglePortfolio';
 
 function App() {
   return (
@@ -24,8 +27,10 @@ function App() {
           >
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/service/:id" element={<SingleServicePage />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/portfolio/:id" element={<SinglePortfolioPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import {
   Search,
   Share2,
@@ -8,66 +8,66 @@ import {
   Mail,
   BarChart,
   ArrowRight,
-} from 'lucide-react';
+} from "lucide-react";
 
 const services = [
   {
     icon: Search,
-    title: 'SEO Optimization',
+    title: "SEO Optimization",
     description:
-      'Improve your search rankings and drive organic traffic with our comprehensive SEO strategies.',
-    color: 'from-blue-500 to-cyan-500',
+      "Improve search rankings and drive organic traffic with proven SEO strategies.",
+    color: "from-blue-500 to-cyan-500",
   },
   {
     icon: Share2,
-    title: 'Social Media Marketing',
+    title: "Social Media Marketing",
     description:
-      'Engage your audience and build brand presence across all major social platforms.',
-    color: 'from-purple-500 to-pink-500',
+      "Build brand presence and engage audiences across social platforms.",
+    color: "from-purple-500 to-pink-500",
   },
   {
     icon: Target,
-    title: 'PPC Advertising',
+    title: "PPC Advertising",
     description:
-      'Maximize ROI with targeted pay-per-click campaigns on Google, Facebook, and LinkedIn.',
-    color: 'from-orange-500 to-red-500',
+      "Maximize ROI with targeted PPC campaigns on major ad platforms.",
+    color: "from-orange-500 to-red-500",
   },
   {
     icon: PenTool,
-    title: 'Content Marketing',
+    title: "Content Marketing",
     description:
-      'Create compelling content that resonates with your audience and drives conversions.',
-    color: 'from-green-500 to-emerald-500',
+      "Create compelling content that converts and builds trust.",
+    color: "from-green-500 to-emerald-500",
   },
   {
     icon: Mail,
-    title: 'Email Marketing',
+    title: "Email Marketing",
     description:
-      'Nurture leads and retain customers with personalized email campaigns.',
-    color: 'from-yellow-500 to-amber-500',
+      "Nurture leads and retain customers with smart automation.",
+    color: "from-yellow-500 to-amber-500",
   },
   {
     icon: BarChart,
-    title: 'Web Analytics',
+    title: "Web Analytics",
     description:
-      'Gain insights from your data to make informed marketing decisions.',
-    color: 'from-indigo-500 to-blue-500',
+      "Track performance and optimize decisions with actionable insights.",
+    color: "from-indigo-500 to-blue-500",
   },
 ];
 
 const cardVariants = {
   hidden: (i) => ({
     opacity: 0,
-    y: 60,
-    x: i % 2 === 0 ? -40 : 40,
+    y: 40,
+    x: i % 2 === 0 ? -30 : 30,
   }),
   visible: {
     opacity: 1,
     y: 0,
     x: 0,
     transition: {
-      duration: 0.8,
-      ease: 'easeOut',
+      duration: 0.7,
+      ease: "easeOut",
     },
   },
 };
@@ -78,11 +78,11 @@ const Services = () => {
       id="services"
       className="py-24 bg-gray-50 dark:bg-gray-900 overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4">
 
-        {/* Section Header */}
+        {/* HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8 }}
@@ -94,14 +94,13 @@ const Services = () => {
               Premium Services
             </span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            High-impact digital marketing solutions designed to grow your brand
-            and maximize ROI
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            High-impact digital solutions crafted to grow your brand and ROI
           </p>
         </motion.div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -110,49 +109,49 @@ const Services = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.25 }}
-              whileHover={{ y: -12 }}
+              whileHover={{ y: -8 }}
               className="relative group"
             >
-              {/* Glow Layer */}
+              {/* Glow */}
               <div
-                className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-100 blur-xl transition duration-500 rounded-3xl`}
+                className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-90 blur-xl transition duration-500 rounded-3xl`}
               />
 
               {/* Card */}
-              <div className="relative h-full p-8 rounded-3xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl border border-gray-200 dark:border-gray-700 shadow-lg group-hover:shadow-2xl transition-all duration-500 flex flex-col">
-                
+              <div className="relative h-full p-7 rounded-3xl bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl border border-gray-200/60 dark:border-gray-700/60 shadow-md group-hover:shadow-xl transition-all duration-500 flex flex-col">
+
                 {/* Icon */}
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-14 h-14 rounded-2xl bg-gradient-to-r ${service.color} flex items-center justify-center mb-5`}
                 >
-                  <service.icon className="h-8 w-8 text-white" />
+                  <service.icon className="h-7 w-7 text-white" />
                 </div>
 
-                {/* Content */}
-                <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+                {/* Text */}
+                <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed flex-grow">
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed flex-grow">
                   {service.description}
                 </p>
 
                 {/* CTA */}
                 <a
                   href="#"
-                  className="inline-flex items-center font-semibold text-primary-600 dark:text-primary-400 group/link"
+                  className="inline-flex items-center text-sm font-semibold text-primary-600 dark:text-primary-400 group/link"
                 >
                   Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover/link:translate-x-2 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover/link:translate-x-1 transition-transform" />
                 </a>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.8 }}

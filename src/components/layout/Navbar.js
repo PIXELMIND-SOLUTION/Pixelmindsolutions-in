@@ -28,19 +28,19 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled
           ? 'glass-effect shadow-lg'
           : 'bg-transparent'
-      }`}
+        }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <Rocket className="h-8 w-8 text-primary-600" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-              Pixelmindsolutions
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="Pixelmindsolutions Logo"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,11 +49,10 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`relative font-medium transition-colors hover:text-primary-600 ${
-                  location.pathname === link.path
+                className={`relative font-medium transition-colors hover:text-primary-600 ${location.pathname === link.path
                     ? 'text-primary-600'
                     : 'text-gray-700 dark:text-gray-300'
-                }`}
+                  }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
@@ -95,11 +94,10 @@ const Navbar = () => {
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-4 py-2 rounded-lg transition-colors ${
-                    location.pathname === link.path
+                  className={`px-4 py-2 rounded-lg transition-colors ${location.pathname === link.path
                       ? 'bg-primary-50 dark:bg-gray-800 text-primary-600'
                       : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
