@@ -16,7 +16,7 @@ const AboutPage = () => {
       expertise: 'Digital Strategy & Growth',
       description: '15+ years transforming businesses through digital innovation. Former Google executive.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-teal-500 to-cyan-500'
     },
     {
       name: 'Sarah Chen',
@@ -25,7 +25,7 @@ const AboutPage = () => {
       expertise: 'SEO & Analytics',
       description: 'Former Google Analytics specialist. Built SEO strategies for Fortune 500 companies.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-teal-500 to-cyan-400'
     },
     {
       name: 'Marcus Rodriguez',
@@ -34,7 +34,7 @@ const AboutPage = () => {
       expertise: 'Brand Strategy & Design',
       description: 'Award-winning creative director with 12+ years in digital storytelling.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-orange-500 to-red-500'
+      color: 'from-cyan-500 to-teal-500'
     },
     {
       name: 'Emily Watson',
@@ -43,7 +43,7 @@ const AboutPage = () => {
       expertise: 'Performance Marketing',
       description: 'Managed $50M+ in ad spend. Certified Google & Meta Ads expert.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-teal-400 to-cyan-500'
     },
     {
       name: 'David Kim',
@@ -52,7 +52,7 @@ const AboutPage = () => {
       expertise: 'Technology & AI',
       description: 'AI and machine learning expert. Built scalable marketing technology platforms.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-indigo-500 to-blue-500'
+      color: 'from-cyan-500 to-teal-400'
     },
     {
       name: 'Jessica Park',
@@ -61,7 +61,7 @@ const AboutPage = () => {
       expertise: 'Content Strategy',
       description: 'Former journalist turned content strategist. Specializes in B2B content marketing.',
       social: { linkedin: '#', twitter: '#' },
-      color: 'from-yellow-500 to-amber-500'
+      color: 'from-teal-500 to-cyan-500'
     },
   ];
 
@@ -70,37 +70,37 @@ const AboutPage = () => {
       icon: Brain,
       title: 'Data-Driven Intelligence',
       description: 'Every decision is backed by advanced analytics, AI insights, and measurable results.',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-teal-500 to-cyan-500'
     },
     {
       icon: Users,
       title: 'Client Partnership',
       description: 'Your success is our success. We build long-term relationships based on trust and results.',
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-teal-400 to-cyan-400'
     },
     {
       icon: Zap,
       title: 'Innovation First',
       description: 'Constantly evolving with cutting-edge technology and forward-thinking strategies.',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-cyan-500 to-teal-500'
     },
     {
       icon: Shield,
       title: 'Integrity & Transparency',
       description: 'Complete transparency in our processes, pricing, and performance reporting.',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-teal-500 to-cyan-500'
     },
     {
       icon: Rocket,
       title: 'Growth Focused',
       description: 'Dedicated to driving sustainable growth and maximizing ROI for every client.',
-      color: 'from-indigo-500 to-blue-500'
+      color: 'from-cyan-500 to-teal-400'
     },
     {
       icon: Heart,
       title: 'Impact Driven',
       description: 'Committed to making a positive impact on businesses, teams, and communities.',
-      color: 'from-yellow-500 to-amber-500'
+      color: 'from-teal-400 to-cyan-500'
     },
   ];
 
@@ -114,12 +114,12 @@ const AboutPage = () => {
   ];
 
   const stats = [
-    { value: '250+', label: 'Happy Clients', icon: Users, color: 'from-blue-500 to-cyan-500' },
-    { value: '15+', label: 'Years Experience', icon: Clock, color: 'from-purple-500 to-pink-500' },
-    { value: '98%', label: 'Client Retention', icon: Heart, color: 'from-green-500 to-emerald-500' },
-    { value: '42+', label: 'Awards Won', icon: Award, color: 'from-orange-500 to-red-500' },
-    { value: '450%', label: 'Avg. ROI', icon: TrendingUp, color: 'from-indigo-500 to-blue-500' },
-    { value: '15+', label: 'Countries', icon: Globe, color: 'from-yellow-500 to-amber-500' },
+    { value: '250+', label: 'Happy Clients', icon: Users, color: 'from-teal-500 to-cyan-500' },
+    { value: '15+', label: 'Years Experience', icon: Clock, color: 'from-teal-400 to-cyan-400' },
+    { value: '98%', label: 'Client Retention', icon: Heart, color: 'from-cyan-500 to-teal-500' },
+    { value: '42+', label: 'Awards Won', icon: Award, color: 'from-teal-500 to-cyan-500' },
+    { value: '450%', label: 'Avg. ROI', icon: TrendingUp, color: 'from-cyan-500 to-teal-400' },
+    { value: '15+', label: 'Countries', icon: Globe, color: 'from-teal-400 to-cyan-500' },
   ];
 
   return (
@@ -128,14 +128,14 @@ const AboutPage = () => {
       <section className="relative py-32 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
           
           {/* Animated Grid */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(to right, #6366f1 1px, transparent 1px),
-                               linear-gradient(to bottom, #6366f1 1px, transparent 1px)`,
+              backgroundImage: `linear-gradient(to right, #06cabc 1px, transparent 1px),
+                               linear-gradient(to bottom, #06cabc 1px, transparent 1px)`,
               backgroundSize: '60px 60px',
             }} />
           </div>
@@ -149,7 +149,7 @@ const AboutPage = () => {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-teal-600 dark:text-teal-400 mb-6">
                 <Sparkles size={16} />
                 <span className="text-sm font-medium">Our Story</span>
               </div>
@@ -158,7 +158,7 @@ const AboutPage = () => {
                 <span className="block text-gray-900 dark:text-white mb-4">
                   Pioneering
                 </span>
-                <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-500 bg-clip-text text-transparent bg-size-200 animate-gradient">
+                <span className="block bg-gradient-to-r from-teal-500 via-cyan-500 to-teal-600 bg-clip-text text-transparent bg-size-200 animate-gradient">
                   Digital Excellence
                 </span>
               </h1>
@@ -170,7 +170,7 @@ const AboutPage = () => {
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-100 text-white dark:text-gray-900 font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-500 dark:to-cyan-500 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
               >
                 <MessageSquare size={20} />
                 <span>Schedule Discovery Call</span>
@@ -230,11 +230,11 @@ const AboutPage = () => {
                 className="relative"
               >
                 {/* Decorative Elements */}
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl" />
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl" />
                 
                 <div className="relative">
                   <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">
-                    Our Journey to <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Excellence</span>
+                    Our Journey to <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Excellence</span>
                   </h2>
                   
                   <div className="space-y-6">
@@ -253,7 +253,7 @@ const AboutPage = () => {
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="px-6 py-3 bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-100 text-white dark:text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+                      className="px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-500 dark:to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
                     >
                       <Play size={20} />
                       <span>Watch Our Story</span>
@@ -271,7 +271,7 @@ const AboutPage = () => {
               >
                 <div className="relative">
                   {/* Vertical Line */}
-                  <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-green-500" />
+                  <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500 via-cyan-500 to-teal-600" />
                   
                   <div className="space-y-12">
                     {milestones.map((milestone, index) => (
@@ -284,12 +284,12 @@ const AboutPage = () => {
                         className="relative pl-24"
                       >
                         {/* Dot */}
-                        <div className="absolute left-6 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full ring-4 ring-white dark:ring-gray-800 z-10" />
+                        <div className="absolute left-6 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full ring-4 ring-white dark:ring-gray-800 z-10" />
                         
                         <div className="bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-6 shadow-xl">
                           <div className="flex items-center gap-4 mb-3">
-                            <div className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full">
-                              <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{milestone.year}</span>
+                            <div className="px-3 py-1 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-full">
+                              <span className="text-sm font-bold text-teal-600 dark:text-teal-400">{milestone.year}</span>
                             </div>
                             <div className="text-lg font-bold text-gray-900 dark:text-white">{milestone.title}</div>
                           </div>
@@ -317,13 +317,13 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-teal-600 dark:text-teal-400 mb-6">
                 <Target size={16} />
                 <span className="text-sm font-medium">Our DNA</span>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">
-                Core Values That <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Drive Us</span>
+                Core Values That <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Drive Us</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 The principles that shape our culture, decisions, and partnerships
@@ -376,13 +376,13 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-teal-600 dark:text-teal-400 mb-6">
                 <Users size={16} />
                 <span className="text-sm font-medium">Leadership Team</span>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">
-                Meet Our <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Visionaries</span>
+                Meet Our <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Visionaries</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                 The brilliant minds and passionate professionals driving innovation and success
@@ -439,10 +439,10 @@ const AboutPage = () => {
 
                       {/* Social Links */}
                       <div className="flex justify-center gap-3">
-                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white flex items-center justify-center hover:shadow-lg transition-shadow">
+                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white flex items-center justify-center hover:shadow-lg transition-shadow">
                           <span>in</span>
                         </button>
-                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center hover:shadow-lg transition-shadow">
+                        <button className="w-10 h-10 rounded-full bg-gradient-to-r from-teal-400 to-cyan-400 text-white flex items-center justify-center hover:shadow-lg transition-shadow">
                           <span>𝕏</span>
                         </button>
                       </div>
@@ -465,7 +465,7 @@ const AboutPage = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-100 text-white dark:text-gray-900 font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center gap-2 mx-auto"
+                className="px-8 py-4 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-500 dark:to-cyan-500 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center gap-2 mx-auto"
               >
                 <ExternalLink size={20} />
                 <span>View Career Opportunities</span>
@@ -487,13 +487,13 @@ const AboutPage = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
-                  Our <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">Culture</span>
+                  Our <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">Culture</span>
                 </h2>
                 
                 <div className="space-y-6">
                   <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center">
                         <Brain className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -508,7 +508,7 @@ const AboutPage = () => {
 
                   <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-xl flex items-center justify-center">
                         <Heart className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -530,13 +530,13 @@ const AboutPage = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
-                  Our <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Impact</span>
+                  Our <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Impact</span>
                 </h2>
                 
                 <div className="space-y-6">
                   <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center">
                         <Globe className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -551,7 +551,7 @@ const AboutPage = () => {
 
                   <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center">
                         <Award className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -572,7 +572,7 @@ const AboutPage = () => {
 
       {/* Final CTA */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-purple-600 to-pink-500" />
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-500" />
         
         {/* Animated Background */}
         <div className="absolute inset-0">
@@ -622,7 +622,7 @@ const AboutPage = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-10 py-5 bg-white text-primary-600 font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center justify-center gap-3"
+                  className="px-10 py-5 bg-white text-teal-600 font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center justify-center gap-3"
                 >
                   <MessageSquare size={20} />
                   <span>Start Partnership</span>

@@ -25,7 +25,7 @@ const projects = [
     category: 'SEO',
     description: '300% traffic growth through strategic optimization',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800',
-    color: 'from-blue-500 to-cyan-500',
+    color: 'from-[#06cabc] to-[#06a6c4]',
     metrics: [
       { value: '300%', label: 'Traffic' },
       { value: '450%', label: 'ROI' },
@@ -38,7 +38,7 @@ const projects = [
     category: 'Social',
     description: '50K leads generated through targeted outreach',
     image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800',
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-[#06cabc] to-[#0699c4]',
     metrics: [
       { value: '50K', label: 'Leads' },
       { value: '$2.15', label: 'CPL' },
@@ -51,7 +51,7 @@ const projects = [
     category: 'PPC',
     description: '60% cost reduction while boosting conversions',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800',
-    color: 'from-orange-500 to-red-500',
+    color: 'from-[#06cabc] to-[#06b4c4]',
     metrics: [
       { value: '60%', label: 'Cost Down' },
       { value: '+240%', label: 'Conversions' },
@@ -64,7 +64,7 @@ const projects = [
     category: 'Content',
     description: '500+ keyword rankings through authority content',
     image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800',
-    color: 'from-green-500 to-emerald-500',
+    color: 'from-[#06cabc] to-[#06dac4]',
     metrics: [
       { value: '500+', label: 'Keywords' },
       { value: '1.2K', label: 'Links' },
@@ -77,7 +77,7 @@ const projects = [
     category: 'Email',
     description: '35% revenue lift through smart automation',
     image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800',
-    color: 'from-yellow-500 to-amber-500',
+    color: 'from-[#06cabc] to-[#06e4c4]',
     metrics: [
       { value: '35%', label: 'Revenue' },
       { value: '42%', label: 'Open Rate' },
@@ -90,7 +90,7 @@ const projects = [
     category: 'Analytics',
     description: 'Real-time insights for data-driven decisions',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800',
-    color: 'from-indigo-500 to-blue-500',
+    color: 'from-[#06cabc] to-[#06f4c4]',
     metrics: [
       { value: '15+', label: 'Sources' },
       { value: '-80%', label: 'Time Saved' },
@@ -114,8 +114,8 @@ const Portfolio = () => {
       
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#06cabc]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#06a6c4]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -128,14 +128,14 @@ const Portfolio = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#06cabc]/10 to-[#06a6c4]/10 dark:from-[#06cabc]/20 dark:to-[#06a6c4]/20 text-[#06cabc] dark:text-[#06cabc]/90 mb-6">
             <Sparkles size={16} />
             <span className="text-sm font-medium">Featured Work</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="block text-gray-900 dark:text-white">Proven</span>
-            <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#06cabc] via-[#06a6c4] to-[#0699c4] bg-clip-text text-transparent">
               Success Stories
             </span>
           </h2>
@@ -153,7 +153,7 @@ const Portfolio = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 activeCategory === category
-                  ? 'bg-gradient-to-r from-primary-600 to-purple-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white shadow-lg'
                   : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
               }`}
             >
@@ -215,7 +215,7 @@ const Portfolio = () => {
                         </div>
                       </div>
                     ))}
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary-500 to-purple-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#06cabc] to-[#06a6c4] flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       <ArrowRight size={18} />
                     </div>
                   </div>
@@ -232,7 +232,7 @@ const Portfolio = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <button className="px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-2">
+          <button className="px-8 py-4 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-2">
             <Globe size={20} />
             <span>View All Case Studies</span>
           </button>
@@ -313,7 +313,7 @@ const Portfolio = () => {
 
                   {/* CTA Buttons */}
                   <div className="flex gap-4">
-                    <button className="flex-1 px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all">
+                    <button className="flex-1 px-6 py-3 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-xl hover:shadow-lg transition-all">
                       View Full Case Study
                     </button>
                     <button className="px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">

@@ -39,14 +39,14 @@ const Footer = () => {
 
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#06cabc]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#06a6c4]/5 rounded-full blur-3xl" />
 
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(to right, #6366f1 1px, transparent 1px),
-                             linear-gradient(to bottom, #6366f1 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, #06cabc 1px, transparent 1px),
+                             linear-gradient(to bottom, #06cabc 1px, transparent 1px)`,
             backgroundSize: '50px 50px',
           }} />
         </div>
@@ -56,12 +56,12 @@ const Footer = () => {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-32 left-10 w-32 h-32 bg-primary-500/10 rounded-full blur-3xl"
+        className="absolute top-32 left-10 w-32 h-32 bg-[#06cabc]/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 4, repeat: Infinity, delay: 2 }}
-        className="absolute bottom-32 right-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"
+        className="absolute bottom-32 right-10 w-40 h-40 bg-[#06a6c4]/10 rounded-full blur-3xl"
       />
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <motion.img
                 src="/lightlogo.png"
-                alt="MarketPro Logo"
+                alt="PixelMindSolutions Logo"
                 className="h-12 w-auto object-contain"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -93,7 +93,7 @@ const Footer = () => {
                 { icon: Clock, text: 'Mon - Fri: 9:00 AM - 6:00 PM PST' },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <item.icon className="h-5 w-5 text-primary-400" />
+                  <item.icon className="h-5 w-5 text-[#06cabc]" />
                   <span className="text-gray-400">{item.text}</span>
                 </div>
               ))}
@@ -102,10 +102,10 @@ const Footer = () => {
 
           {/* Newsletter Section */}
           <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-2xl blur-xl" />
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#06cabc]/20 to-[#06a6c4]/20 rounded-2xl blur-xl" />
             <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary-600 to-purple-600 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#06cabc] to-[#06a6c4] flex items-center justify-center">
                   <Send className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -122,7 +122,7 @@ const Footer = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full pl-12 pr-4 py-4 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full pl-12 pr-4 py-4 bg-gray-900/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#06cabc] focus:border-transparent"
                     required
                   />
                 </div>
@@ -131,7 +131,7 @@ const Footer = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   {isSubmitted ? (
                     <>
@@ -275,7 +275,7 @@ const Footer = () => {
                 { icon: Twitter, label: 'Twitter', color: 'hover:bg-sky-500' },
                 { icon: Instagram, label: 'Instagram', color: 'hover:bg-pink-600' },
                 { icon: Linkedin, label: 'LinkedIn', color: 'hover:bg-blue-700' },
-                { icon: Globe, label: 'Website', color: 'hover:bg-primary-600' },
+                { icon: Globe, label: 'Website', color: 'hover:bg-[#06cabc]' },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
@@ -310,24 +310,15 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="text-gray-500 text-sm">
-              <p>&copy; {currentYear} MarketPro Digital Agency. All rights reserved.</p>
+              <p>&copy; {currentYear} PixelMindSolutions. All rights reserved.</p>
             </div>
-
-            {/* Payment Methods */}
-            {/* <div className="flex items-center gap-4">
-              {['Visa', 'Mastercard', 'PayPal', 'Stripe'].map((method) => (
-                <div key={method} className="px-3 py-1.5 bg-gray-800/50 rounded-lg text-xs font-medium">
-                  {method}
-                </div>
-              ))}
-            </div> */}
 
             {/* Back to Top */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="px-4 py-2 bg-gradient-to-r from-primary-600/20 to-purple-600/20 text-primary-400 rounded-xl hover:from-primary-600/30 hover:to-purple-600/30 transition-all flex items-center gap-2"
+              className="px-4 py-2 bg-gradient-to-r from-[#06cabc]/20 to-[#06a6c4]/20 text-[#06cabc] rounded-xl hover:from-[#06cabc]/30 hover:to-[#06a6c4]/30 transition-all flex items-center gap-2"
             >
               <span>Back to Top</span>
               <ArrowUpRight className="h-4 w-4 rotate-90" />
@@ -336,7 +327,7 @@ const Footer = () => {
 
           {/* Additional Info */}
           <div className="mt-6 text-center text-gray-500 text-xs">
-            <p>MarketPro is a registered trademark. All other trademarks are the property of their respective owners.</p>
+            <p>PixelMindSolutions is a registered trademark. All other trademarks are the property of their respective owners.</p>
             <p className="mt-2">Made with ❤️ for digital excellence</p>
           </div>
         </div>

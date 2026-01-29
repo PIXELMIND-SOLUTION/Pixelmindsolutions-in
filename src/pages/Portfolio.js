@@ -38,10 +38,10 @@ const PortfolioPage = () => {
       challenge: 'Low organic visibility and inefficient ad spend resulting in high customer acquisition costs.',
       solution: 'Comprehensive SEO overhaul combined with data-driven PPC strategy and conversion optimization.',
       results: [
-        { icon: TrendingUp, label: 'Revenue Growth', value: '+325%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'New Customers', value: '45K+', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'ROI', value: '480%', color: 'from-purple-500 to-pink-500' },
-        { icon: BarChart, label: 'Traffic', value: '+280%', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'Revenue Growth', value: '+325%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'New Customers', value: '45K+', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'ROI', value: '480%', color: 'from-teal-500 to-cyan-400' },
+        { icon: BarChart, label: 'Traffic', value: '+280%', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-3', task: 'Technical SEO Audit' },
@@ -50,7 +50,7 @@ const PortfolioPage = () => {
         { month: 'Month 10-12', task: 'Scaling & Automation' },
       ],
       image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['E-commerce', 'International', 'Growth'],
       featured: true,
     },
@@ -64,10 +64,10 @@ const PortfolioPage = () => {
       challenge: 'Low brand authority and poor content engagement in a competitive B2B market.',
       solution: 'Authority-driven content strategy with technical SEO and data storytelling.',
       results: [
-        { icon: TrendingUp, label: 'Organic Traffic', value: '+420%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'Enterprise Sign-ups', value: '12K+', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'MRR Growth', value: '+200%', color: 'from-purple-500 to-pink-500' },
-        { icon: Target, label: 'Keyword Ranked', value: 'Top 10', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'Organic Traffic', value: '+420%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'Enterprise Sign-ups', value: '12K+', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'MRR Growth', value: '+200%', color: 'from-teal-500 to-cyan-400' },
+        { icon: Target, label: 'Keyword Ranked', value: 'Top 10', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-2', task: 'Content Audit & Strategy' },
@@ -76,7 +76,7 @@ const PortfolioPage = () => {
         { month: 'Month 7-8', task: 'Performance Scaling' },
       ],
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200',
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['B2B', 'SaaS', 'Content'],
     },
     {
@@ -89,10 +89,10 @@ const PortfolioPage = () => {
       challenge: 'Limited brand reach and low social engagement affecting store foot traffic.',
       solution: 'Influencer-driven social campaigns with user-generated content strategy.',
       results: [
-        { icon: TrendingUp, label: 'Social Engagement', value: '+650%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'Instagram Followers', value: '85K+', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'Store Sales', value: '+180%', color: 'from-purple-500 to-pink-500' },
-        { icon: Share2, label: 'Brand Mentions', value: '+320%', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'Social Engagement', value: '+650%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'Instagram Followers', value: '85K+', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'Store Sales', value: '+180%', color: 'from-teal-500 to-cyan-400' },
+        { icon: Share2, label: 'Brand Mentions', value: '+320%', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-2', task: 'Influencer Partnerships' },
@@ -100,7 +100,7 @@ const PortfolioPage = () => {
         { month: 'Month 5-6', task: 'UGC Campaign' },
       ],
       image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200',
-      color: 'from-orange-500 to-red-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['Local Business', 'Retail', 'Influencer'],
       featured: true,
     },
@@ -114,10 +114,10 @@ const PortfolioPage = () => {
       challenge: 'Low email engagement and poor lead quality in enterprise sales funnel.',
       solution: 'Personalized automated email flows with advanced segmentation and AI optimization.',
       results: [
-        { icon: TrendingUp, label: 'Lead Quality', value: '+85%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'SQLs Generated', value: '2.4K', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'Avg. Deal Size', value: '+60%', color: 'from-purple-500 to-pink-500' },
-        { icon: Mail, label: 'Email Open Rate', value: '42%', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'Lead Quality', value: '+85%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'SQLs Generated', value: '2.4K', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'Avg. Deal Size', value: '+60%', color: 'from-teal-500 to-cyan-400' },
+        { icon: Mail, label: 'Email Open Rate', value: '42%', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-3', task: 'Email Strategy & Segmentation' },
@@ -125,7 +125,7 @@ const PortfolioPage = () => {
         { month: 'Month 7-9', task: 'AI Optimization' },
       ],
       image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200',
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['Enterprise', 'B2B', 'Automation'],
     },
     {
@@ -138,10 +138,10 @@ const PortfolioPage = () => {
       challenge: 'Low app store visibility and poor user retention rates.',
       solution: 'ASO optimization combined with referral programs and retention automation.',
       results: [
-        { icon: TrendingUp, label: 'App Downloads', value: '+550%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'Active Users', value: '150K+', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'Revenue', value: '+320%', color: 'from-purple-500 to-pink-500' },
-        { icon: Target, label: 'Retention Rate', value: '+45%', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'App Downloads', value: '+550%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'Active Users', value: '150K+', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'Revenue', value: '+320%', color: 'from-teal-500 to-cyan-400' },
+        { icon: Target, label: 'Retention Rate', value: '+45%', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-3', task: 'ASO Optimization' },
@@ -149,7 +149,7 @@ const PortfolioPage = () => {
         { month: 'Month 7-10', task: 'Retention Automation' },
       ],
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200',
-      color: 'from-indigo-500 to-blue-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['Mobile', 'Tech', 'Growth'],
     },
     {
@@ -162,10 +162,10 @@ const PortfolioPage = () => {
       challenge: 'Minimal brand recognition in competitive luxury market.',
       solution: 'Integrated brand storytelling across digital channels with premium content.',
       results: [
-        { icon: TrendingUp, label: 'Brand Recall', value: '+280%', color: 'from-green-500 to-emerald-500' },
-        { icon: Users, label: 'Social Following', value: '65K+', color: 'from-blue-500 to-cyan-500' },
-        { icon: DollarSign, label: 'Sales Growth', value: '+150%', color: 'from-purple-500 to-pink-500' },
-        { icon: Globe, label: 'Market Share', value: '+25%', color: 'from-orange-500 to-red-500' },
+        { icon: TrendingUp, label: 'Brand Recall', value: '+280%', color: 'from-emerald-500 to-teal-500' },
+        { icon: Users, label: 'Social Following', value: '65K+', color: 'from-cyan-500 to-teal-400' },
+        { icon: DollarSign, label: 'Sales Growth', value: '+150%', color: 'from-teal-500 to-cyan-400' },
+        { icon: Globe, label: 'Market Share', value: '+25%', color: 'from-teal-400 to-cyan-500' },
       ],
       timeline: [
         { month: 'Month 1-2', task: 'Brand Identity Development' },
@@ -173,7 +173,7 @@ const PortfolioPage = () => {
         { month: 'Month 5-7', task: 'Multi-channel Campaign' },
       ],
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200',
-      color: 'from-amber-500 to-yellow-500',
+      color: 'from-teal-500 to-cyan-500',
       tags: ['Luxury', 'Branding', 'Content'],
     },
   ];
@@ -201,14 +201,14 @@ const PortfolioPage = () => {
       <section className="relative py-32 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
 
           {/* Grid Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(to right, #6366f1 1px, transparent 1px),
-                               linear-gradient(to bottom, #6366f1 1px, transparent 1px)`,
+              backgroundImage: `linear-gradient(to right, #06cabc 1px, transparent 1px),
+                               linear-gradient(to bottom, #06cabc 1px, transparent 1px)`,
               backgroundSize: '60px 60px',
             }} />
           </div>
@@ -221,7 +221,7 @@ const PortfolioPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-6xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-teal-600 dark:text-teal-400 mb-6">
               <Sparkles size={16} />
               <span className="text-sm font-medium">Proven Success</span>
             </div>
@@ -230,7 +230,7 @@ const PortfolioPage = () => {
               <span className="block text-gray-900 dark:text-white mb-4">
                 Impactful
               </span>
-              <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-500 bg-clip-text text-transparent bg-size-200 animate-gradient">
+              <span className="block bg-gradient-to-r from-teal-500 via-cyan-500 to-teal-600 bg-clip-text text-transparent bg-size-200 animate-gradient">
                 Case Studies
               </span>
             </h1>
@@ -255,7 +255,7 @@ const PortfolioPage = () => {
                   whileHover={{ scale: 1.05 }}
                   className="text-center p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg"
                 >
-                  <stat.icon className="h-8 w-8 text-primary-500 mx-auto mb-3" />
+                  <stat.icon className="h-8 w-8 text-teal-500 mx-auto mb-3" />
                   <div className="text-3xl font-bold text-gray-900 dark:text-white">
                     {stat.value}
                   </div>
@@ -269,7 +269,7 @@ const PortfolioPage = () => {
             <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-100 text-white dark:text-gray-900 font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-500 dark:to-cyan-500 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
             >
               <MessageSquare size={20} />
               <span>Start Your Success Story</span>
@@ -290,8 +290,8 @@ const PortfolioPage = () => {
               className="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 rounded-lg">
-                  <Filter size={20} className="text-primary-600 dark:text-primary-400" />
+                <div className="p-2 bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 rounded-lg">
+                  <Filter size={20} className="text-teal-600 dark:text-teal-400" />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -310,7 +310,7 @@ const PortfolioPage = () => {
 
                 <motion.div
                   layoutId="activeFilter"
-                  className="hidden sm:block px-3 py-1.5 bg-gradient-to-r from-primary-600 to-purple-600 text-white text-sm font-medium rounded-full"
+                  className="hidden sm:block px-3 py-1.5 bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-sm font-medium rounded-full"
                 >
                   {categories.find(c => c.id === activeFilter)?.name}
                 </motion.div>
@@ -331,20 +331,20 @@ const PortfolioPage = () => {
                       onClick={() => setActiveFilter(category.id)}
                       className={`group relative px-4 py-2.5 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 flex-shrink-0 ${isActive
                           ? 'text-white shadow-lg'
-                          : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
+                          : 'text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
                         }`}
                     >
                       {isActive && (
                         <motion.div
                           layoutId="activeTab"
-                          className="absolute inset-0 bg-gradient-to-r from-primary-600 to-purple-600 rounded-xl z-[-1]"
+                          className="absolute inset-0 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-xl z-[-1]"
                           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                         />
                       )}
                       <span>{category.name}</span>
                       <span className={`px-2 py-0.5 text-xs rounded-full ${isActive
                           ? 'bg-white/20'
-                          : 'bg-gray-300 dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30'
+                          : 'bg-gray-300 dark:bg-gray-700 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/30'
                         }`}>
                         {category.count}
                       </span>
@@ -374,7 +374,7 @@ const PortfolioPage = () => {
                   {/* Featured Badge */}
                   {study.featured && (
                     <div className="absolute -top-3 -left-3 z-10">
-                      <div className="px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-amber-500 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1">
+                      <div className="px-3 py-1.5 bg-gradient-to-r from-teal-500 to-cyan-500 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1">
                         <Zap size={10} />
                         <span>Featured</span>
                       </div>
@@ -382,7 +382,7 @@ const PortfolioPage = () => {
                   )}
 
                   {/* Card */}
-                  <div className="relative h-full overflow-hidden rounded-3xl border border-indigo-300">
+                  <div className="relative h-full overflow-hidden rounded-3xl border border-teal-300">
                     {/* Gradient Border */}
                     <div className={`absolute inset-0 p-1 bg-gradient-to-r ${study.color} rounded-3xl`}>
                       <div className="absolute inset-0 bg-white dark:bg-gray-800 rounded-3xl" />
@@ -445,7 +445,7 @@ const PortfolioPage = () => {
                             {study.results.slice(0, 4).map((result, idx) => (
                               <div key={idx} className="text-center p-2 bg-gradient-to-b from-gray-50 to-white dark:from-gray-700 dark:to-gray-800 rounded-xl">
                                 <div className="flex items-center justify-center gap-2 mb-1">
-                                  <result.icon size={14} className="text-primary-500" />
+                                  <result.icon size={14} className="text-teal-500" />
                                   <div className="text-sm font-bold text-gray-900 dark:text-white">
                                     {result.value}
                                   </div>
@@ -481,7 +481,7 @@ const PortfolioPage = () => {
                             <motion.button
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className="px-5 py-2.5 bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-100 text-white dark:text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+                              className="px-5 py-2.5 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-500 dark:to-cyan-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
                             >
                               <span className="text-sm">View Details</span>
                               <ChevronRight size={16} />
@@ -494,7 +494,7 @@ const PortfolioPage = () => {
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: hoveredCase === study.id ? 1 : 0 }}
-                        className="absolute inset-0 bg-gradient-to-t from-primary-600/10 via-transparent to-transparent pointer-events-none rounded-3xl"
+                        className="absolute inset-0 bg-gradient-to-t from-teal-500/10 via-transparent to-transparent pointer-events-none rounded-3xl"
                       />
                     </div>
                   </div>
@@ -521,7 +521,7 @@ const PortfolioPage = () => {
               </p>
               <button
                 onClick={() => setActiveFilter('all')}
-                className="px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all"
+                className="px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all"
               >
                 View All Projects
               </button>
@@ -540,7 +540,7 @@ const PortfolioPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              Our <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Impact</span>
+              Our <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">Impact</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Measurable results across all our client projects
@@ -549,10 +549,10 @@ const PortfolioPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { value: '$42M+', label: 'Revenue Generated', color: 'from-blue-500 to-cyan-500' },
-              { value: '98%', label: 'Client Satisfaction', color: 'from-purple-500 to-pink-500' },
-              { value: '450%', label: 'Average ROI', color: 'from-green-500 to-emerald-500' },
-              { value: '250+', label: 'Projects Delivered', color: 'from-orange-500 to-red-500' },
+              { value: '$42M+', label: 'Revenue Generated', color: 'from-teal-500 to-cyan-500' },
+              { value: '98%', label: 'Client Satisfaction', color: 'from-teal-500 to-emerald-500' },
+              { value: '450%', label: 'Average ROI', color: 'from-cyan-500 to-teal-500' },
+              { value: '250+', label: 'Projects Delivered', color: 'from-teal-400 to-cyan-400' },
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -583,7 +583,7 @@ const PortfolioPage = () => {
 
       {/* Final CTA */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-purple-600 to-pink-500" />
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-500" />
 
         {/* Animated Background */}
         <div className="absolute inset-0">
@@ -633,7 +633,7 @@ const PortfolioPage = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-10 py-5 bg-white text-primary-600 font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center justify-center gap-3"
+                  className="px-10 py-5 bg-white text-teal-600 font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center justify-center gap-3"
                 >
                   <MessageSquare size={20} />
                   <span>Book Free Consultation</span>

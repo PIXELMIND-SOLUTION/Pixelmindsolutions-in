@@ -8,28 +8,28 @@ const processSteps = [
     title: 'Research & Discovery',
     description:
       'We analyze your market, audience, and competitors to identify opportunities.',
-    color: 'from-blue-500 to-cyan-500',
+    color: 'from-[#06cabc] to-[#06a6c4]',
   },
   {
     icon: Target,
     title: 'Strategy Development',
     description:
       'Crafting a customized marketing strategy aligned with your business objectives.',
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-[#06cabc] to-[#0699c4]',
   },
   {
     icon: Play,
     title: 'Execution',
     description:
       'Implementing campaigns across all channels with precision and creativity.',
-    color: 'from-orange-500 to-red-500',
+    color: 'from-[#06cabc] to-[#06b4c4]',
   },
   {
     icon: TrendingUp,
     title: 'Optimization',
     description:
       'Continuous monitoring and refinement to maximize performance and ROI.',
-    color: 'from-green-500 to-emerald-500',
+    color: 'from-[#06cabc] to-[#06dac4]',
   },
 ];
 
@@ -68,7 +68,7 @@ const Process = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gray-900 dark:text-white">Our Proven </span>
-            <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
               Process
             </span>
           </h2>
@@ -82,7 +82,7 @@ const Process = () => {
         <div className="relative">
 
           {/* Desktop Connector Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 opacity-30" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-[2px] bg-gradient-to-r from-[#06cabc] via-[#0699c4] to-[#06dac4] opacity-30" />
 
           {/* Steps */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 relative">
@@ -110,7 +110,7 @@ const Process = () => {
                 <div className="relative z-10 bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl border border-gray-200 dark:border-gray-700 rounded-3xl p-8 shadow-lg group-hover:shadow-2xl transition-all duration-500 w-full">
 
                   {/* Step Badge */}
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-primary-600 to-purple-600 flex items-center justify-center text-white font-bold shadow-lg">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-[#06cabc] to-[#06a6c4] flex items-center justify-center text-white font-bold shadow-lg">
                     {index + 1}
                   </div>
 

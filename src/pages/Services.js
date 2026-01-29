@@ -30,7 +30,7 @@ const ServicesPage = () => {
         'SEO Performance Tracking'
       ],
       results: ['+300% Organic Traffic', '+150% Keyword Rankings', '-40% Bounce Rate'],
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-[#06cabc] to-[#06a6c4]',
       duration: '3-6 Months',
       price: 'Starting at $1,500/month',
       popular: true
@@ -50,7 +50,7 @@ const ServicesPage = () => {
         'Performance Analytics'
       ],
       results: ['+85% Engagement Rate', '50K+ Followers Growth', '-30% Cost per Engagement'],
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-[#06cabc] to-[#0699c4]',
       duration: 'Ongoing',
       price: 'Starting at $2,000/month',
       popular: true
@@ -70,7 +70,7 @@ const ServicesPage = () => {
         'ROI Tracking & Reporting'
       ],
       results: ['+240% Conversion Rate', '-60% Cost per Acquisition', '450% ROI'],
-      color: 'from-orange-500 to-red-500',
+      color: 'from-[#06cabc] to-[#06b4c4]',
       duration: '1-3 Months',
       price: 'Starting at $1,800/month + ad spend',
       popular: true
@@ -90,7 +90,7 @@ const ServicesPage = () => {
         'Performance Measurement'
       ],
       results: ['+500% Content Engagement', '120+ Backlinks', '75% Lead Quality Improvement'],
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-[#06cabc] to-[#06dac4]',
       duration: 'Ongoing',
       price: 'Starting at $2,500/month'
     },
@@ -109,7 +109,7 @@ const ServicesPage = () => {
         'Performance Analytics'
       ],
       results: ['+42% Open Rates', '+35% Revenue Growth', '+18% Click-through Rates'],
-      color: 'from-yellow-500 to-amber-500',
+      color: 'from-[#06cabc] to-[#06e4c4]',
       duration: 'Ongoing',
       price: 'Starting at $1,200/month'
     },
@@ -128,7 +128,7 @@ const ServicesPage = () => {
         'Monthly Reporting'
       ],
       results: ['-80% Reporting Time', '+99% Data Accuracy', '15+ Data Sources Integrated'],
-      color: 'from-indigo-500 to-blue-500',
+      color: 'from-[#06cabc] to-[#06f4c4]',
       duration: '1 Month Setup',
       price: 'Starting at $1,000/month'
     },
@@ -147,7 +147,7 @@ const ServicesPage = () => {
         'Reputation Score Tracking'
       ],
       results: ['+4.8/5 Avg Rating', '95% Positive Reviews', '-60% Response Time'],
-      color: 'from-red-500 to-pink-500',
+      color: 'from-[#06cabc] to-[#0694c4]',
       duration: 'Ongoing',
       price: 'Starting at $1,500/month'
     },
@@ -166,7 +166,7 @@ const ServicesPage = () => {
         'ROI Optimization'
       ],
       results: ['+65% Efficiency', '+40% Conversion Lift', '-50% Manual Work'],
-      color: 'from-violet-500 to-purple-500',
+      color: 'from-[#06cabc] to-[#0684c4]',
       duration: '2-4 Months',
       price: 'Starting at $3,000/month',
       popular: true
@@ -193,14 +193,14 @@ const ServicesPage = () => {
       <section className="relative py-32 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#06cabc]/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#06a6c4]/10 rounded-full blur-3xl" />
           
           {/* Animated Grid */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(to right, #6366f1 1px, transparent 1px),
-                               linear-gradient(to bottom, #6366f1 1px, transparent 1px)`,
+              backgroundImage: `linear-gradient(to right, #06cabc 1px, transparent 1px),
+                               linear-gradient(to bottom, #06cabc 1px, transparent 1px)`,
               backgroundSize: '60px 60px',
             }} />
           </div>
@@ -213,7 +213,7 @@ const ServicesPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-5xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#06cabc]/10 to-[#06a6c4]/10 dark:from-[#06cabc]/20 dark:to-[#06a6c4]/20 text-[#06cabc] dark:text-[#06cabc]/90 mb-6">
               <Sparkles size={16} />
               <span className="text-sm font-medium">Premium Solutions</span>
             </div>
@@ -222,7 +222,7 @@ const ServicesPage = () => {
               <span className="block text-gray-900 dark:text-white mb-4">
                 Digital
               </span>
-              <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-500 bg-clip-text text-transparent bg-size-200 animate-gradient">
+              <span className="block bg-gradient-to-r from-[#06cabc] via-[#06a6c4] to-[#0699c4] bg-clip-text text-transparent">
                 Excellence
               </span>
             </h1>
@@ -247,7 +247,7 @@ const ServicesPage = () => {
                   whileHover={{ scale: 1.05 }}
                   className="text-center p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg"
                 >
-                  <stat.icon className="h-8 w-8 text-primary-500 mx-auto mb-3" />
+                  <stat.icon className="h-8 w-8 text-[#06cabc] mx-auto mb-3" />
                   <div className="text-3xl font-bold text-gray-900 dark:text-white">
                     {stat.value}
                   </div>
@@ -275,15 +275,15 @@ const ServicesPage = () => {
       <section className="py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Fixed Filter Header */}
-          <div className=" top-24 z-30 mb-12 pt-6 pb-8 bg-gradient-to-b from-white/95 via-white/90 to-transparent dark:from-gray-900/95 dark:via-gray-900/90 dark:to-transparent backdrop-blur-md -mx-4 px-4 sm:mx-0 sm:px-0 sm:rounded-2xl">  {/* sticky */}
+          <div className="top-24 z-30 mb-12 pt-6 pb-8 bg-gradient-to-b from-white/95 via-white/90 to-transparent dark:from-gray-900/95 dark:via-gray-900/90 dark:to-transparent backdrop-blur-md -mx-4 px-4 sm:mx-0 sm:px-0 sm:rounded-2xl">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               className="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 rounded-lg">
-                  <Filter size={20} className="text-primary-600 dark:text-primary-400" />
+                <div className="p-2 bg-gradient-to-r from-[#06cabc]/10 to-[#06a6c4]/10 dark:from-[#06cabc]/20 dark:to-[#06a6c4]/20 rounded-lg">
+                  <Filter size={20} className="text-[#06cabc] dark:text-[#06cabc]/90" />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -303,7 +303,7 @@ const ServicesPage = () => {
                 {/* Active Category Indicator */}
                 <motion.div
                   layoutId="activeIndicator"
-                  className="hidden sm:block px-3 py-1.5 bg-gradient-to-r from-primary-600 to-purple-600 text-white text-sm font-medium rounded-full"
+                  className="hidden sm:block px-3 py-1.5 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white text-sm font-medium rounded-full"
                 >
                   {categories.find(c => c.id === activeTab)?.name}
                 </motion.div>
@@ -326,13 +326,13 @@ const ServicesPage = () => {
                       className={`group relative px-4 py-2.5 rounded-xl font-medium transition-all duration-300 flex items-center gap-2 flex-shrink-0 ${
                         isActive
                           ? 'text-white shadow-lg'
-                          : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
+                          : 'text-gray-700 dark:text-gray-300 hover:text-[#06cabc] dark:hover:text-[#06cabc]/90 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
                     >
                       {isActive && (
                         <motion.div
                           layoutId="activeTab"
-                          className="absolute inset-0 bg-gradient-to-r from-primary-600 to-purple-600 rounded-xl z-[-1]"
+                          className="absolute inset-0 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] rounded-xl z-[-1]"
                           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                         />
                       )}
@@ -341,7 +341,7 @@ const ServicesPage = () => {
                       <span className={`px-2 py-0.5 text-xs rounded-full ${
                         isActive
                           ? 'bg-white/20'
-                          : 'bg-gray-300 dark:bg-gray-700 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/30'
+                          : 'bg-gray-300 dark:bg-gray-700 group-hover:bg-[#06cabc]/10 dark:group-hover:bg-[#06cabc]/20'
                       }`}>
                         {category.count}
                       </span>
@@ -378,7 +378,7 @@ const ServicesPage = () => {
                   )}
 
                   {/* Card */}
-                  <div className="relative h-full overflow-hidden rounded-3xl border border-indigo-300">
+                  <div className="relative h-full overflow-hidden rounded-3xl border border-[#06cabc]/20">
                     {/* Gradient Border */}
                     <div className={`absolute inset-0 p-1 bg-gradient-to-r ${service.color} rounded-3xl`}>
                       <div className="absolute inset-0 bg-white dark:bg-gray-800 rounded-3xl" />
@@ -443,7 +443,7 @@ const ServicesPage = () => {
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">Starting at</div>
-                            <div className="text-lg font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+                            <div className="text-lg font-bold bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
                               {service.price}
                             </div>
                           </div>
@@ -466,7 +466,7 @@ const ServicesPage = () => {
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: hoveredService === service.id ? 1 : 0 }}
-                      className="absolute inset-0 bg-gradient-to-t from-primary-600/10 via-transparent to-transparent pointer-events-none rounded-3xl"
+                      className="absolute inset-0 bg-gradient-to-t from-[#06cabc]/10 via-transparent to-transparent pointer-events-none rounded-3xl"
                     />
                   </div>
                 </motion.div>
@@ -492,7 +492,7 @@ const ServicesPage = () => {
               </p>
               <button
                 onClick={() => setActiveTab('all')}
-                className="px-6 py-3 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all"
+                className="px-6 py-3 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-xl hover:shadow-lg transition-all"
               >
                 View All Services
               </button>
@@ -507,18 +507,18 @@ const ServicesPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-center mb-20"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#06cabc]/10 to-[#06a6c4]/10 dark:from-[#06cabc]/20 dark:to-[#06a6c4]/20 text-[#06cabc] dark:text-[#06cabc]/90 mb-6">
               <Brain size={16} />
               <span className="text-sm font-medium">Our Methodology</span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               <span className="block text-gray-900 dark:text-white">The </span>
-              <span className="block bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-                MarketPro Process
+              <span className="block bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
+                PixelMind Process
               </span>
             </h2>
           </motion.div>
@@ -526,7 +526,7 @@ const ServicesPage = () => {
           {/* Timeline */}
           <div className="relative max-w-6xl mx-auto">
             {/* Timeline Line */}
-            <div className="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500" />
+            <div className="hidden lg:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-[#06cabc] via-[#06a6c4] to-[#0699c4]" />
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
@@ -535,28 +535,28 @@ const ServicesPage = () => {
                   title: 'Discovery & Analysis',
                   description: 'Deep dive into your business, competitors, and market opportunities.',
                   icon: Search,
-                  color: 'from-blue-500 to-cyan-500'
+                  color: 'from-[#06cabc] to-[#06a6c4]'
                 },
                 {
                   step: 2,
                   title: 'Strategy Development',
                   description: 'Custom strategy crafted for your specific goals and audience.',
                   icon: Target,
-                  color: 'from-purple-500 to-pink-500'
+                  color: 'from-[#06cabc] to-[#0699c4]'
                 },
                 {
                   step: 3,
                   title: 'Implementation',
                   description: 'Precision execution with ongoing optimization and monitoring.',
                   icon: Zap,
-                  color: 'from-orange-500 to-red-500'
+                  color: 'from-[#06cabc] to-[#06b4c4]'
                 },
                 {
                   step: 4,
                   title: 'Growth & Scaling',
                   description: 'Continuous optimization and scaling for maximum impact.',
                   icon: TrendingUp,
-                  color: 'from-green-500 to-emerald-500'
+                  color: 'from-[#06cabc] to-[#06dac4]'
                 },
               ].map((process, index) => (
                 <motion.div
@@ -570,7 +570,7 @@ const ServicesPage = () => {
                 >
                   {/* Step Number */}
                   <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center border-4 border-white dark:border-gray-800 shadow-xl z-10">
-                    <span className="text-lg font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+                    <span className="text-lg font-bold bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
                       {process.step}
                     </span>
                   </div>
@@ -601,7 +601,7 @@ const ServicesPage = () => {
 
       {/* CTA Section */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-purple-600 to-pink-500" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#06cabc] via-[#06a6c4] to-[#0699c4]" />
         
         {/* Animated Background */}
         <div className="absolute inset-0">
@@ -637,7 +637,7 @@ const ServicesPage = () => {
                 Ready to Transform Your Business?
               </h2>
               <p className="text-xl text-white/90 mb-12">
-                Join industry leaders who trust MarketPro with their digital transformation.
+                Join industry leaders who trust PixelMindSolutions with their digital transformation.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -645,7 +645,7 @@ const ServicesPage = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-10 py-5 bg-white text-primary-600 font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center gap-3"
+                    className="px-10 py-5 bg-white text-[#06cabc] font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all flex items-center gap-3"
                   >
                     <MessageSquare size={20} />
                     <span>Start Conversation</span>

@@ -10,7 +10,6 @@ import {
   CheckCircle,
   ChevronDown,
 } from "lucide-react";
-import GradientText from "../ui/GradientText";
 
 /* ===== Animations ===== */
 const fadeUp = {
@@ -74,7 +73,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@marketpro.com",
+      value: "hello@pixelmindsolutions.com",
       description: "We respond within 24 hours",
     },
     {
@@ -113,7 +112,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-900 overflow-hidden">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* ===== Header ===== */}
@@ -126,9 +125,11 @@ const Contact = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="text-gray-900 dark:text-white">
-              Let’s Start Your{" "}
+              Let's Start Your{" "}
             </span>
-            <GradientText>Success Story</GradientText>
+            <span className="bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
+              Success Story
+            </span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Reach out for a free strategy consultation.
@@ -156,7 +157,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Message Sent!</h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  We’ll contact you shortly.
+                  We'll contact you shortly.
                 </p>
               </motion.div>
             ) : (
@@ -230,7 +231,7 @@ const Contact = () => {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     disabled={isSubmitting}
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold flex justify-center items-center gap-2"
+                    className="w-full py-4 rounded-xl bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold flex justify-center items-center gap-2"
                   >
                     {isSubmitting ? "Sending..." : (
                       <>
@@ -265,7 +266,7 @@ const Contact = () => {
                     className="w-full flex justify-between items-center"
                   >
                     <div className="flex items-center gap-3">
-                      <item.icon className="text-primary-600" />
+                      <item.icon className="text-[#06cabc]" />
                       <span className="font-semibold">{item.title}</span>
                     </div>
                     <ChevronDown
@@ -301,7 +302,7 @@ const Contact = () => {
               className="glass-effect rounded-3xl p-8"
             >
               <h3 className="text-xl font-bold flex items-center gap-2 mb-6">
-                <MessageSquare className="text-primary-600" /> FAQs
+                <MessageSquare className="text-[#06cabc]" /> FAQs
               </h3>
 
               {faqs.map((faq, i) => (
@@ -346,10 +347,27 @@ const Contact = () => {
           border: 1px solid #e5e7eb;
           background: transparent;
           outline: none;
+          color: #374151;
+          transition: all 0.3s ease;
         }
         .input:focus {
-          border-color: #7c3aed;
-          box-shadow: 0 0 0 1px #7c3aed;
+          border-color: #06cabc;
+          box-shadow: 0 0 0 3px rgba(6, 202, 188, 0.1);
+        }
+        .dark .input {
+          border-color: #4b5563;
+          color: #d1d5db;
+          background: rgba(31, 41, 55, 0.5);
+        }
+        .dark .input:focus {
+          border-color: #06cabc;
+          box-shadow: 0 0 0 3px rgba(6, 202, 188, 0.2);
+        }
+        .input::placeholder {
+          color: #9ca3af;
+        }
+        .dark .input::placeholder {
+          color: #6b7280;
         }
       `}</style>
     </section>

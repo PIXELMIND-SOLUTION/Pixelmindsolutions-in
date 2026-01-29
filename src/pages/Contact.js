@@ -6,7 +6,6 @@ import {
   Award, Zap, Sparkles, CheckCircle, ChevronDown,
   Plus, Minus
 } from 'lucide-react';
-import Card from '../components/ui/Card';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +30,8 @@ const ContactPage = () => {
       description: 'For general inquiries and support',
       value: 'hello@marketpro.com',
       cta: 'Send Email',
-      color: 'from-blue-500 via-cyan-500 to-sky-500',
-      gradient: 'bg-gradient-to-r from-blue-500 via-cyan-500 to-sky-500',
+      color: 'from-teal-500 via-cyan-500 to-sky-500',
+      gradient: 'bg-gradient-to-r from-teal-500 via-cyan-500 to-sky-500',
     },
     {
       icon: Phone,
@@ -40,8 +39,8 @@ const ContactPage = () => {
       description: 'Speak with our team directly',
       value: '+1 (555) 123-4567',
       cta: 'Call Now',
-      color: 'from-purple-500 via-pink-500 to-rose-500',
-      gradient: 'bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500',
+      color: 'from-teal-500 via-cyan-500 to-teal-600',
+      gradient: 'bg-gradient-to-r from-teal-500 via-cyan-500 to-teal-600',
     },
     {
       icon: Calendar,
@@ -49,8 +48,8 @@ const ContactPage = () => {
       description: 'Schedule a free consultation',
       value: '30-min strategy session',
       cta: 'Schedule Now',
-      color: 'from-emerald-500 via-green-500 to-teal-500',
-      gradient: 'bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500',
+      color: 'from-cyan-500 via-teal-500 to-cyan-600',
+      gradient: 'bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600',
     },
   ];
 
@@ -102,12 +101,12 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen pt-5 bg-gradient-to-b from-gray-50 via-white to-primary-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen pt-5 bg-gradient-to-b from-gray-50 via-white to-teal-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-teal-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
       {/* Hero Section */}
@@ -119,16 +118,16 @@ const ContactPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-purple-500/10 border border-primary-500/20 dark:border-primary-400/20 mb-6">
-              <Sparkles className="w-4 h-4 mr-2 text-primary-600 dark:text-primary-400" />
-              <span className="text-sm font-medium bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-cyan-500/10 border border-teal-500/20 dark:border-teal-400/20 mb-6">
+              <Sparkles className="w-4 h-4 mr-2 text-teal-600 dark:text-teal-400" />
+              <span className="text-sm font-medium bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
                 Premium Support Available 24/7
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
               <span className="block text-gray-900 dark:text-white mb-2">Let's Create</span>
-              <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-500 bg-clip-text text-transparent">
                 Something Amazing
               </span>
             </h1>
@@ -148,8 +147,8 @@ const ContactPage = () => {
                   className="text-center"
                 >
                   <div className="relative inline-flex mb-3">
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-500 blur-xl opacity-30 rounded-full"></div>
-                    <stat.icon className="relative w-10 h-10 text-primary-600 dark:text-primary-400" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 blur-xl opacity-30 rounded-full"></div>
+                    <stat.icon className="relative w-10 h-10 text-teal-600 dark:text-teal-400" />
                   </div>
                   <div className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
                     {stat.value}
@@ -179,7 +178,7 @@ const ContactPage = () => {
               >
                 <div className="relative h-full">
                   <div className="absolute inset-0 bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl transform group-hover:scale-[1.02] transition-all duration-500"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-transparent to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 via-transparent to-cyan-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative p-8 h-full">
                     <div className={`w-20 h-20 rounded-2xl ${method.gradient} flex items-center justify-center mb-8 transform group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
                       <method.icon className="h-10 w-10 text-white" />
@@ -212,10 +211,10 @@ const ContactPage = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-purple-500 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-10 shadow-2xl">
                 <div className="flex items-center mb-10">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary-500 to-purple-500 flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 flex items-center justify-center mr-4">
                     <Send className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -239,7 +238,7 @@ const ContactPage = () => {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300"
                         placeholder="John"
                         required
                       />
@@ -253,7 +252,7 @@ const ContactPage = () => {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleChange}
-                        className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300"
                         placeholder="Doe"
                         required
                       />
@@ -269,7 +268,7 @@ const ContactPage = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300"
+                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300"
                       placeholder="john@company.com"
                       required
                     />
@@ -284,7 +283,7 @@ const ContactPage = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300"
+                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300"
                       placeholder="Your Company"
                     />
                   </div>
@@ -297,7 +296,7 @@ const ContactPage = () => {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300 appearance-none"
+                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300 appearance-none"
                     >
                       <option value="">Select a service</option>
                       <option value="seo">SEO Optimization</option>
@@ -319,7 +318,7 @@ const ContactPage = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="5"
-                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 transition-all duration-300 resize-none"
+                      className="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 transition-all duration-300 resize-none"
                       placeholder="Tell us about your project goals and challenges..."
                       required
                     />
@@ -327,7 +326,7 @@ const ContactPage = () => {
 
                   <button
                     type="submit"
-                    className="w-full py-5 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-3 group"
+                    className="w-full py-5 bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-3 group"
                   >
                     <Send className="h-5 w-5 transform group-hover:rotate-12 transition-transform" />
                     <span className="text-lg">Send Message</span>
@@ -346,7 +345,7 @@ const ContactPage = () => {
               {/* Office Info */}
               <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl p-8 lg:p-10 shadow-2xl">
                 <h3 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">
-                  <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
                     Our Headquarters
                   </span>
                 </h3>
@@ -375,8 +374,8 @@ const ContactPage = () => {
                       transition={{ delay: index * 0.1 }}
                       className="flex items-start space-x-5 p-4 rounded-2xl hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors duration-300"
                     >
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-500/10 to-purple-500/10 border border-primary-500/20 dark:border-primary-400/20 flex items-center justify-center flex-shrink-0">
-                        <info.icon className="h-6 w-6 text-primary-600 dark:text-primary-400" />
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/20 dark:border-teal-400/20 flex items-center justify-center flex-shrink-0">
+                        <info.icon className="h-6 w-6 text-teal-600 dark:text-teal-400" />
                       </div>
                       <div>
                         <h4 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
@@ -398,7 +397,7 @@ const ContactPage = () => {
               {/* FAQ Accordion */}
               <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl p-8 lg:p-10 shadow-2xl">
                 <div className="flex items-center space-x-4 mb-10">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary-500 to-purple-500 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 flex items-center justify-center">
                     <MessageSquare className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -420,23 +419,23 @@ const ContactPage = () => {
                       transition={{ delay: index * 0.1 }}
                       className={`rounded-2xl overflow-hidden ${
                         openFaq === index 
-                          ? 'bg-gradient-to-r from-primary-50 to-purple-50 dark:from-gray-700/50 dark:to-gray-800/50' 
+                          ? 'bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-gray-700/50 dark:to-gray-800/50' 
                           : 'bg-white dark:bg-gray-800'
                       } border-2 ${
                         openFaq === index 
-                          ? 'border-primary-200 dark:border-primary-700' 
+                          ? 'border-teal-200 dark:border-teal-700' 
                           : 'border-gray-200 dark:border-gray-700'
                       } transition-all duration-300`}
                     >
                       <button
                         onClick={() => toggleFaq(index)}
-                        className="w-full px-6 py-5 text-left flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"
+                        className="w-full px-6 py-5 text-left flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-2xl"
                       >
                         <div className="flex items-start space-x-4">
                           <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 ${
                             openFaq === index 
-                              ? 'bg-primary-500 text-white' 
-                              : 'bg-primary-500/10 text-primary-600 dark:text-primary-400'
+                              ? 'bg-teal-500 text-white' 
+                              : 'bg-teal-500/10 text-teal-600 dark:text-teal-400'
                           } transition-colors duration-300`}>
                             {openFaq === index ? (
                               <Minus className="h-4 w-4" />
@@ -446,14 +445,14 @@ const ContactPage = () => {
                           </div>
                           <h4 className={`font-bold text-lg ${
                             openFaq === index 
-                              ? 'text-primary-700 dark:text-primary-400' 
+                              ? 'text-teal-700 dark:text-teal-400' 
                               : 'text-gray-900 dark:text-white'
-                          } transition-colors group-hover:text-primary-600 dark:group-hover:text-primary-400`}>
+                          } transition-colors group-hover:text-teal-600 dark:group-hover:text-teal-400`}>
                             {faq.question}
                           </h4>
                         </div>
                         <ChevronDown className={`w-5 h-5 transform transition-transform duration-300 ${
-                          openFaq === index ? 'rotate-180 text-primary-600' : 'text-gray-400'
+                          openFaq === index ? 'rotate-180 text-teal-600' : 'text-gray-400'
                         }`} />
                       </button>
                       
@@ -471,8 +470,8 @@ const ContactPage = () => {
                                 {faq.answer}
                               </p>
                               {index === 0 && (
-                                <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                                  <p className="text-sm text-blue-700 dark:text-blue-300">
+                                <div className="mt-4 p-3 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+                                  <p className="text-sm text-teal-700 dark:text-teal-300">
                                     <strong>Pro Tip:</strong> For urgent matters, please mention "URGENT" in your email subject line for prioritized response.
                                   </p>
                                 </div>
@@ -490,9 +489,9 @@ const ContactPage = () => {
                   <p className="text-center text-gray-600 dark:text-gray-400 mb-6">
                     Still have questions?
                   </p>
-                  <button className="w-full py-4 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl hover:border-primary-500 dark:hover:border-primary-400 hover:bg-primary-50/50 dark:hover:bg-primary-900/20 transition-all duration-300 flex items-center justify-center space-x-3 group">
-                    <MessageSquare className="h-5 w-5 text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
-                    <span className="font-semibold text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">
+                  <button className="w-full py-4 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl hover:border-teal-500 dark:hover:border-teal-400 hover:bg-teal-50/50 dark:hover:bg-teal-900/20 transition-all duration-300 flex items-center justify-center space-x-3 group">
+                    <MessageSquare className="h-5 w-5 text-gray-400 group-hover:text-teal-600 dark:group-hover:text-teal-400" />
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 group-hover:text-teal-600 dark:group-hover:text-teal-400">
                       Ask a Custom Question
                     </span>
                   </button>
@@ -514,7 +513,7 @@ const ContactPage = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="block text-gray-900 dark:text-white">Visit Our</span>
-              <span className="block bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
                 Innovation Hub
               </span>
             </h2>
@@ -529,9 +528,9 @@ const ContactPage = () => {
               {/* Map Visualization */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
-                  <div className="w-96 h-96 rounded-full border-2 border-primary-500/30 animate-pulse"></div>
-                  <div className="w-80 h-80 rounded-full border-2 border-purple-500/30 absolute top-8 left-8 animate-pulse animation-delay-1000"></div>
-                  <MapPin className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-primary-400 drop-shadow-lg" />
+                  <div className="w-96 h-96 rounded-full border-2 border-teal-500/30 animate-pulse"></div>
+                  <div className="w-80 h-80 rounded-full border-2 border-cyan-500/30 absolute top-8 left-8 animate-pulse animation-delay-1000"></div>
+                  <MapPin className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-teal-400 drop-shadow-lg" />
                 </div>
               </div>
               
@@ -540,7 +539,7 @@ const ContactPage = () => {
                 <button className="px-6 py-3 bg-white/90 backdrop-blur-sm rounded-xl font-semibold text-gray-900 hover:bg-white transition-all duration-300 hover:scale-105">
                   Get Directions
                 </button>
-                <button className="px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-all duration-300 hover:scale-105">
+                <button className="px-6 py-3 bg-teal-600 text-white rounded-xl font-semibold hover:bg-teal-700 transition-all duration-300 hover:scale-105">
                   Street View
                 </button>
               </div>
@@ -554,18 +553,18 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary-500 to-purple-500 rounded-3xl blur-2xl opacity-20"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-3xl blur-2xl opacity-20"></div>
             <div className="relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl p-12 text-center shadow-2xl">
-              <div className="inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-primary-500/10 to-purple-500/10 border border-primary-500/20 dark:border-primary-400/20 mb-8">
-                <Sparkles className="w-4 h-4 mr-2 text-primary-600 dark:text-primary-400" />
-                <span className="text-sm font-medium bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+              <div className="inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-cyan-500/10 border border-teal-500/20 dark:border-teal-400/20 mb-8">
+                <Sparkles className="w-4 h-4 mr-2 text-teal-600 dark:text-teal-400" />
+                <span className="text-sm font-medium bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
                   Limited Time Offer
                 </span>
               </div>
               
               <h3 className="text-4xl md:text-5xl font-bold mb-8">
                 <span className="block text-gray-900 dark:text-white">Ready to Accelerate</span>
-                <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-500 bg-clip-text text-transparent">
                   Your Growth?
                 </span>
               </h3>
@@ -575,12 +574,12 @@ const ContactPage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button className="group px-10 py-5 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
+                <button className="group px-10 py-5 bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-1 flex items-center space-x-3">
                   <Calendar className="h-5 w-5" />
                   <span>Schedule Free Strategy Call</span>
                   <ChevronRight className="h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="px-10 py-5 border-2 border-gray-300 dark:border-gray-600 rounded-2xl font-semibold hover:border-primary-500 dark:hover:border-primary-400 transition-all duration-300 hover:scale-105 flex items-center space-x-3">
+                <button className="px-10 py-5 border-2 border-gray-300 dark:border-gray-600 rounded-2xl font-semibold hover:border-teal-500 dark:hover:border-teal-400 transition-all duration-300 hover:scale-105 flex items-center space-x-3">
                   <Users className="h-5 w-5" />
                   <span>View Case Studies</span>
                 </button>
@@ -594,7 +593,7 @@ const ContactPage = () => {
                   '24/7 premium support'
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-primary-600 dark:text-primary-400" />
+                    <CheckCircle className="h-5 w-5 text-teal-600 dark:text-teal-400" />
                     <span className="text-gray-700 dark:text-gray-300 font-medium">{feature}</span>
                   </div>
                 ))}

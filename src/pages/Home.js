@@ -66,7 +66,7 @@ const Home = () => {
               <span
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   isActive
-                    ? "bg-primary-600 scale-125 shadow-lg shadow-primary-500/50"
+                    ? "bg-teal-600 scale-125 shadow-lg shadow-teal-500/50"
                     : "bg-gray-400 dark:bg-gray-600"
                 }`}
               />
@@ -75,7 +75,7 @@ const Home = () => {
               <span
                 className={`text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "opacity-100 translate-x-0 text-primary-600"
+                    ? "opacity-100 translate-x-0 text-teal-600"
                     : "opacity-0 -translate-x-2 text-gray-500 group-hover:opacity-80"
                 }`}
               >

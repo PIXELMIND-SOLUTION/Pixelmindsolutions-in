@@ -5,14 +5,15 @@ import { ArrowRight, Play, ChevronLeft, ChevronRight, Sparkles, Zap, Target, Bar
 // BANNER 1: MODERN DASHBOARD HERO
 const Banner1 = () => {
   return (
-    <section className="relative pt-28 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section className="relative mt-8 pt-28 pb-20 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Animated grid background */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(to right, #6366f1 1px, transparent 1px),
-                           linear-gradient(to bottom, #6366f1 1px, transparent 1px)`,
-          backgroundSize: '50px 50px',
-          maskImage: 'radial-gradient(circle at 50% 50%, black 30%, transparent 70%)'
+          backgroundImage: `linear-gradient(to right, #06cabc 1px, transparent 1px),
+                           linear-gradient(to bottom, #06cabc 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+          maskImage: 'radial-gradient(circle at center, black 55%, transparent 90%)'
+
         }} />
       </div>
 
@@ -20,12 +21,12 @@ const Banner1 = () => {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-20 left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl"
+        className="absolute top-20 left-10 w-32 h-32 bg-[#06cabc]/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-        className="absolute bottom-20 right-10 w-40 h-40 bg-primary-500/10 rounded-full blur-3xl"
+        className="absolute bottom-20 right-10 w-40 h-40 bg-[#06cabc]/10 rounded-full blur-3xl"
       />
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -35,7 +36,7 @@ const Banner1 = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#06cabc]/10 dark:bg-[#06cabc]/20 text-[#06cabc] dark:text-[#06cabc]/90 mb-6">
               <Sparkles size={16} />
               <span className="text-sm font-medium">AI-Powered Platform</span>
             </div>
@@ -44,7 +45,7 @@ const Banner1 = () => {
               <span className="block text-gray-900 dark:text-white mb-2">
                 Data-Driven
               </span>
-              <span className="block bg-gradient-to-r from-primary-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#06cabc] via-[#06a6c4] to-[#0699c4] bg-clip-text text-transparent">
                 Marketing Intelligence
               </span>
             </h1>
@@ -57,7 +58,7 @@ const Banner1 = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl flex items-center justify-center space-x-2 transition-all"
+                className="group px-8 py-4 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl flex items-center justify-center space-x-2 transition-all"
               >
                 <span>Start Free Trial</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -112,14 +113,14 @@ const Banner1 = () => {
                           <div className="text-gray-400 text-xs">KPI {i+1}</div>
                           <div className="text-2xl font-bold text-white">{value}%</div>
                         </div>
-                        <BarChart3 size={20} className="text-primary-400" />
+                        <BarChart3 size={20} className="text-[#06cabc]" />
                       </div>
                       <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           animate={{ width: `${value}%` }}
                           transition={{ duration: 1, delay: i * 0.1 }}
-                          className="h-full bg-gradient-to-r from-primary-500 to-purple-500 rounded-full"
+                          className="h-full bg-gradient-to-r from-[#06cabc] to-[#06a6c4] rounded-full"
                         />
                       </div>
                     </div>
@@ -153,11 +154,11 @@ const Banner1 = () => {
 // BANNER 2: CARD-BASED HERO
 const Banner2 = () => {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="relative mt-8 py-20 md:py-28 overflow-hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Abstract background */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#06cabc]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#06a6c4]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -167,7 +168,7 @@ const Banner2 = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-600 dark:text-primary-400 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#06cabc]/10 to-[#06a6c4]/10 dark:from-[#06cabc]/20 dark:to-[#06a6c4]/20 text-[#06cabc] dark:text-[#06cabc]/90 mb-6">
               <Zap size={16} />
               <span className="text-sm font-medium">Next Generation Platform</span>
             </div>
@@ -176,7 +177,7 @@ const Banner2 = () => {
               <span className="block text-gray-900 dark:text-white">
                 Elevate Your
               </span>
-              <span className="block bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
                 Digital Strategy
               </span>
             </h1>
@@ -194,21 +195,21 @@ const Banner2 = () => {
               icon: Target,
               title: "Precision Targeting",
               description: "Reach your ideal audience with AI-powered segmentation and behavioral analysis.",
-              color: "from-blue-500 to-cyan-500",
+              color: "from-[#06cabc] to-[#06a6c4]",
               delay: 0
             },
             {
               icon: Rocket,
               title: "Rapid Scaling",
               description: "Grow your campaigns efficiently with automated optimization and scaling tools.",
-              color: "from-primary-500 to-purple-500",
+              color: "from-[#06cabc] to-[#0699c4]",
               delay: 0.1
             },
             {
               icon: Shield,
               title: "Enterprise Security",
               description: "Bank-level security with SOC2 compliance and data protection guarantees.",
-              color: "from-green-500 to-emerald-500",
+              color: "from-[#06cabc] to-[#06b4c4]",
               delay: 0.2
             }
           ].map((card, index) => (
@@ -231,7 +232,7 @@ const Banner2 = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                   {card.description}
                 </p>
-                <button className="text-primary-600 dark:text-primary-400 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                <button className="text-[#06cabc] dark:text-[#06cabc]/90 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
                   Learn more
                   <ArrowRight size={16} />
                 </button>
@@ -251,7 +252,7 @@ const Banner2 = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-2xl shadow-xl flex items-center justify-center space-x-2"
+              className="px-8 py-4 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-2xl shadow-xl flex items-center justify-center space-x-2"
             >
               <Users size={20} />
               <span>Join 2,000+ Companies</span>
@@ -259,7 +260,7 @@ const Banner2 = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-2xl font-semibold flex items-center justify-center space-x-2 hover:border-primary-500 dark:hover:border-primary-500"
+              className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-2xl font-semibold flex items-center justify-center space-x-2 hover:border-[#06cabc] dark:hover:border-[#06cabc]"
             >
               <Play size={20} />
               <span>Watch Case Study</span>
@@ -274,10 +275,10 @@ const Banner2 = () => {
 // BANNER 3: MINIMAL IMAGE-FOCUSED HERO
 const Banner3 = () => {
   return (
-    <section className="relative min-h-screen mt-5 flex items-center overflow-hidden bg-gray-50 dark:bg-gray-900">
+    <section className="relative min-h-screen pt-24 mt-8 flex items-center overflow-hidden bg-gray-50 dark:bg-gray-900">
       {/* Background pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(99,102,241,0.1)_1px,transparent_0)] bg-[size:40px_40px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(6,202,188,0.1)_1px,transparent_0)] bg-[size:40px_40px]" />
       </div>
 
       {/* Floating elements */}
@@ -288,7 +289,7 @@ const Banner3 = () => {
           rotate: [0, 90, 0]
         }}
         transition={{ duration: 20, repeat: Infinity }}
-        className="absolute top-20 left-20 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl"
+        className="absolute top-20 left-20 w-64 h-64 bg-[#06cabc]/10 rounded-full blur-3xl"
       />
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -301,7 +302,7 @@ const Banner3 = () => {
           >
             {/* Subtle badge */}
             <div className="absolute -top-6 -left-6">
-              <div className="px-4 py-2 bg-gradient-to-r from-primary-600 to-purple-600 text-white rounded-full text-sm font-semibold rotate-[-4deg] shadow-lg">
+              <div className="px-4 py-2 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white rounded-full text-sm font-semibold rotate-[-4deg] shadow-lg">
                 Premium Partner
               </div>
             </div>
@@ -313,7 +314,7 @@ const Banner3 = () => {
               <span className="block text-gray-900 dark:text-white">
                 Creativity
               </span>
-              <span className="block bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
                 Meets Results
               </span>
             </h1>
@@ -374,7 +375,7 @@ const Banner3 = () => {
                 className="absolute -top-6 -left-6 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl max-w-xs"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full" />
+                  <div className="w-8 h-8 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] rounded-full" />
                   <div>
                     <div className="font-semibold text-gray-900 dark:text-white">Sarah Chen</div>
                     <div className="text-sm text-gray-500">Marketing Director</div>
@@ -390,7 +391,7 @@ const Banner3 = () => {
                 initial={{ x: 20, y: 20 }}
                 animate={{ x: 0, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="absolute -bottom-6 -right-6 bg-gradient-to-r from-primary-600 to-purple-600 rounded-2xl p-6 shadow-2xl max-w-xs"
+                className="absolute -bottom-6 -right-6 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] rounded-2xl p-6 shadow-2xl max-w-xs"
               >
                 <div className="text-white">
                   <div className="text-2xl font-bold mb-2">89%</div>
@@ -438,7 +439,7 @@ const NavigationControls = ({ currentBanner, totalBanners, onNext, onPrev, onSel
           >
             <div className={`w-2 h-2 rounded-full transition-all ${
               index === currentBanner 
-                ? 'bg-primary-600' 
+                ? 'bg-[#06cabc]' 
                 : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
             }`} />
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
@@ -477,7 +478,7 @@ const BannerCounter = ({ currentBanner, totalBanners, isVisible }) => {
       <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-600 dark:text-gray-400">Banner</span>
-          <span className="font-semibold text-primary-600 dark:text-primary-400">
+          <span className="font-semibold text-[#06cabc] dark:text-[#06cabc]/90">
             {currentBanner + 1}/{totalBanners}
           </span>
         </div>

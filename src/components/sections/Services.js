@@ -16,42 +16,42 @@ const services = [
     title: "SEO Optimization",
     description:
       "Improve search rankings and drive organic traffic with proven SEO strategies.",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-[#06cabc] to-[#06a6c4]",
   },
   {
     icon: Share2,
     title: "Social Media Marketing",
     description:
       "Build brand presence and engage audiences across social platforms.",
-    color: "from-purple-500 to-pink-500",
+    color: "from-[#06cabc] to-[#0699c4]",
   },
   {
     icon: Target,
     title: "PPC Advertising",
     description:
       "Maximize ROI with targeted PPC campaigns on major ad platforms.",
-    color: "from-orange-500 to-red-500",
+    color: "from-[#06cabc] to-[#06b4c4]",
   },
   {
     icon: PenTool,
     title: "Content Marketing",
     description:
       "Create compelling content that converts and builds trust.",
-    color: "from-green-500 to-emerald-500",
+    color: "from-[#06cabc] to-[#06dac4]",
   },
   {
     icon: Mail,
     title: "Email Marketing",
     description:
       "Nurture leads and retain customers with smart automation.",
-    color: "from-yellow-500 to-amber-500",
+    color: "from-[#06cabc] to-[#06e4c4]",
   },
   {
     icon: BarChart,
     title: "Web Analytics",
     description:
       "Track performance and optimize decisions with actionable insights.",
-    color: "from-indigo-500 to-blue-500",
+    color: "from-[#06cabc] to-[#06f4c4]",
   },
 ];
 
@@ -90,7 +90,7 @@ const Services = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gray-900 dark:text-white">Our </span>
-            <span className="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#06cabc] to-[#06a6c4] bg-clip-text text-transparent">
               Premium Services
             </span>
           </h2>
@@ -139,7 +139,7 @@ const Services = () => {
                 {/* CTA */}
                 <a
                   href="#"
-                  className="inline-flex items-center text-sm font-semibold text-primary-600 dark:text-primary-400 group/link"
+                  className="inline-flex items-center text-sm font-semibold text-[#06cabc] dark:text-[#06cabc]/90 group/link"
                 >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4 transform group-hover/link:translate-x-1 transition-transform" />
@@ -157,7 +157,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mt-20"
         >
-          <button className="px-10 py-4 bg-gradient-to-r from-primary-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <button className="px-10 py-4 bg-gradient-to-r from-[#06cabc] to-[#06a6c4] text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
             View All Services
           </button>
         </motion.div>
